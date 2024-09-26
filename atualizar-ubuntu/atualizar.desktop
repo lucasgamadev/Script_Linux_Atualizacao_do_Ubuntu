@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Atualizar Sistema
+Exec=/usr/local/bin/atualizar-ubuntu/atualizar-ubuntu.sh
+Icon=/usr/local/bin/atualizar-ubuntu/atualizar-ubuntu.png
+Terminal=true
+Type=Application
+Categories=Utility;
