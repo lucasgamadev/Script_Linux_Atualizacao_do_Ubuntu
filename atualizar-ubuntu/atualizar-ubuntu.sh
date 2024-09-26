@@ -47,8 +47,8 @@ if ! sudo apt-get dist-upgrade -y | sudo tee /tmp/dist-upgrade.log; then
     exit 1
 fi
 
-# -f DistUpgradeViewNonInteractive: Essa opção executa a atualização em modo não interativo, permitindo que ela prossiga sem solicitar confirmações.
-if ! sudo do-release-upgrade -f DistUpgradeViewNonInteractive | sudo tee /tmp/do-release-upgrade.log; then
+# Busca por uma versão mais recente da distribuição
+if ! sudo do-release-upgrade | sudo tee /tmp/do-release-upgrade.log; then
     echo -e "${negrito}${vermelho}Erro ao atualizar a distribuição.${reset}"
     exit 1
 fi
