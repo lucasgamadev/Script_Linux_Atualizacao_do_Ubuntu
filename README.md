@@ -2,9 +2,9 @@
 
 ## Modo de Uso (instalador online)
 
-Passo 1: Coloque o arquivo setup-atualizar-ubuntu.sh em uma pasta local do Ubuntu. [Exemplo: Área de Trabalho]  
+Passo 1: Coloque o arquivo setup-atualizar-ubuntu.sh em uma pasta local do Ubuntu. Exemplo: Área de Trabalho.  
 Passo 2: Abra o terminal no local que está o arquivo.  
-Passo 3: Execute o comando:  
+Passo 3: Execute o seguinte comando:  
 
     sudo chmod +x setup-atualizar-ubuntu.sh && ./setup-atualizar-ubuntu.sh
   
