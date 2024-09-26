@@ -47,6 +47,11 @@ if ! sudo apt-get dist-upgrade -y | sudo tee /tmp/dist-upgrade.log; then
     exit 1
 fi
 
+if ! sudo do-release-upgrade -y | sudo tee /tmp/do-release-upgrade.log; then
+    echo -e "${negrito}${vermelho}Erro ao atualizar a distribuição.${reset}"
+    exit 1
+fi
+
 echo -e "${negrito}${ciano}Removendo pacotes desnecessários...${reset}"
 if ! sudo apt-get autoremove -y | sudo tee /tmp/autoremove.log; then
     echo -e "${negrito}${vermelho}Erro ao remover pacotes desnecessários.${reset}"
