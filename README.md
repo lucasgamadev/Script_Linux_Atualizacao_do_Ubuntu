@@ -16,4 +16,4 @@ Baixa os arquivos necessários via método wget, diretamente do Google Drive, e 
 
 ## O que o script atualizar-ubuntu.sh faz?
 
-É um script de automação para atualizar pacotes e o sistema operacional em uma distribuição Ubuntu. Ele realiza uma série de ações para garantir que o sistema esteja atualizado, removendo pacotes desnecessários, limpando arquivos temporários e atualizando pacotes tanto do sistema quanto da Snap Store.
+É um script de automação para atualizar pacotes e o sistema operacional em uma distribuição Ubuntu. Ele realiza uma série de ações para garantir que o sistema esteja atualizado, removendo pacotes desnecessários, limpando arquivos temporários e atualizando pacotes tanto do sistema quanto da Snap Store.  
