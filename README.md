@@ -1,3 +1,5 @@
+# Projeto Script Linux (Ubuntu)
+
 ## Modo de Uso (instalador online)
 
 Passo 1: Coloque o arquivo setup-atualizar-ubuntu.sh em uma pasta local do Ubuntu.  
