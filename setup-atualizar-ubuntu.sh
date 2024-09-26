@@ -24,6 +24,18 @@ negrito=$(tput bold)
 sublinhado=$(tput smul) 
 reset=$(tput sgr0)
 
+# Função para verificar conexão com a internet
+echo "${negrito}${ciano}Verificando conexão com a internet${reset}"
+if ping -c 1 -W 1 google.com &> /dev/null; then
+    # Mostra mensagem de conexão estabelecida
+        echo "${negrito}${verde}Conexão estabelecida!${reset}"
+else
+    # Mostra mensagem de sem conexão e fecha o script
+    echo "${negrito}${vermelho}Sem conexão. Verifique sua rede e tente novamente.${reset}"
+    read -p "${negrito}Pressione ${vermelho}Enter${reset}${negrito} para sair${reset}"
+    exit 1
+fi
+
 # Cria pasta para os arquivos
 ARQUIVO="atualizar-ubuntu" # < Coloque o nome do arquivo.zip aqui
 LOCAL="/usr/local/bin/$ARQUIVO/"
