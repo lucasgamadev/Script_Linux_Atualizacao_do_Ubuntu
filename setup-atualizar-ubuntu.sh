@@ -53,8 +53,16 @@ sudo rm "$FILE_NAME"
 echo "${negrito}${verde}O arquivo ${reset}${negrito}${azul}$ARQUIVO.zip ${reset}${negrito}${verde}foi removido!${reset}"
 
 # Dar permissão para execução para arquivo .desktop e .sh
-sudo chmod +x *.desktop *.sh # < Coloque o nome do arquivo .desktop e .sh aqui
+# Aplica permissão de execução (+x) para o proprietário, grupo e outros aos arquivos .sh.
+sudo chmod +x *.desktop *.sh
+# Aplica permissões de leitura e escrita para o proprietário, e apenas leitura para grupo e outros aos arquivos .desktop.
+sudo chmod 644 *.desktop
 echo "${negrito}${verde}Concedida a permissão de execução para os arquivos .desktop e .sh!${reset}"
+
+# Alterar o proprietário do arquivo .desktop para o usuário atual
+echo "${negrito}${ciano}Alterando o proprietário do arquivo .desktop para o usuário atual...${reset}"
+sudo chown $USER:$USER *.desktop
+echo "${negrito}${verde}O proprietário do arquivo .desktop foi alterado para ${magenta}$USER${reset}"
 
 # Mover arquivo .desktop para Área de Trabalho
 echo "${negrito}${ciano}Movendo arquivo .desktop...${reset}"
