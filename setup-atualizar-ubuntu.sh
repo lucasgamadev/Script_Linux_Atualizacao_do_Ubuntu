@@ -25,7 +25,7 @@ sublinhado=$(tput smul)
 reset=$(tput sgr0)
 
 # Função para verificar conexão com a internet
-echo "${negrito}${ciano}Verificando conexão com a internet${reset}"
+echo "${negrito}${ciano}Verificando conexão com a internet...${reset}"
 if ping -c 1 -W 1 google.com &> /dev/null; then
     # Mostra mensagem de conexão estabelecida
         echo "${negrito}${verde}Conexão estabelecida!${reset}"
