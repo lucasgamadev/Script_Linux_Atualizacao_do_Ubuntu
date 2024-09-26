@@ -6,7 +6,7 @@ Passo 1: Coloque o arquivo setup-atualizar-ubuntu.sh em uma pasta local do Ubunt
 Passo 2: Abra o terminal no local que está o arquivo.  
 Passo 3: Execute o comando: sudo chmod +x setup-atualizar-ubuntu.sh  
 Passo 4: Execute o comando: ./setup-atualizar-ubuntu.sh  
-Passo 5: Aguarde o download e instalação.  
+Passo 5: Aguarde o processo de download e instalação autônoma.  
 Passo 6: Faça a última instrução exibida ao final da instalação. Instrução final: O atalho deve aparecer na sua área de trabalho agora. Clique com o botão direito do mouse no atalho e selecione "Permitir iniciar". Agora você pode clicar duas vezes no atalho para executar o script diretamente da sua área de trabalho."  
 Fim!
 
