@@ -47,7 +47,7 @@ echo "${negrito}${verde}Download concluído com sucesso!${reset}"
 
 # Descompactar arquivos
 echo "${negrito}${ciano}Descompactando arquivos...${reset}"
-sudo unzip "$FILE_NAME"
+sudo unzip -o "$FILE_NAME"
 echo "${negrito}${verde}Os arquivos foram descompactados na pasta ${reset}${negrito}${magenta}$LOCAL${reset}"
 
 # Remover arquivo compactado
