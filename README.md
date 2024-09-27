@@ -9,7 +9,10 @@ Passo 3: Execute o seguinte comando:
     sudo chmod +x setup-atualizar-ubuntu.sh && ./setup-atualizar-ubuntu.sh
   
 Passo 4: Aguarde o processo de download e instalação autônoma.  
-Passo 5: Faça a última instrução exibida ao final da instalação. Instrução final: O atalho deve aparecer na sua área de trabalho agora. Clique com o botão direito do mouse no atalho e selecione "Permitir iniciar". Agora você pode clicar duas vezes no atalho para executar o script diretamente da sua área de trabalho."  
+Passo 5: Faça a última instrução exibida ao final da instalação.  
+
+INSTRUÇÕES FINAIS: O atalho atualizar.desktop deve aparecer na sua área de trabalho agora. Clique com o botão direito do mouse no atalho e selecione "Permitir iniciar". Agora você pode clicar duas vezes no atalho para executar o script diretamente da sua área de trabalho.
+
 Fim!
 
 ## O que o script setup-atualizar-ubuntu.sh faz?
