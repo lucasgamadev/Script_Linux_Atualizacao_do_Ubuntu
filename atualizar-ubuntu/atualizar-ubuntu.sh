@@ -76,12 +76,6 @@ echo "${negrito}${ciano}Atualizando pacotes snap...${reset}"
 sudo snap refresh
 echo "${negrito}${verde}Pacotes atualizados!${reset}"
 
-##################### RESULTADO #####################
-
-# Mostra o resultado da atualização
-echo -e "\n${negrito}${verde}Resultado da atualização:${reset}"
-cat /tmp/upgrade.log
-
 echo -e "${negrito}${verde}Atualização concluída com sucesso!${reset}"
 
 read -p "${negrito}Pressione ${reset}${negrito}${verde}Enter${reset}${negrito} para fechar...${reset}"
