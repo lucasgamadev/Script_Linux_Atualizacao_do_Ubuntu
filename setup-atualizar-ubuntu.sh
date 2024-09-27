@@ -21,15 +21,21 @@ else
     exit 1
 fi
 
-# Cria pasta para os arquivos
-ARQUIVO="atualizar-ubuntu" # < Coloque o nome do arquivo.zip aqui
+# Define o nome do arquivo e a pasta para os arquivos
+ARQUIVO="atualizar-ubuntu" # < Coloque o nome do arquivo.zip aqui (mesmo nome do arquivo no Google Drive) 
 LOCAL="/usr/local/bin/$ARQUIVO/"
-echo "${negrito}${ciano}Criando pasta ${reset}${negrito}${magenta}$ARQUIVO${reset}${negrito}${ciano} em${reset} ${negrito}${magenta}/usr/local/bin${reset}${negrito}${ciano}...${reset}"
-sudo mkdir "$LOCAL"
-echo "${negrito}${verde}A pasta ${reset}${negrito}${magenta}$ARQUIVO${reset}${negrito}${verde} foi criada!${reset}"
 
-# Abrir pasta
-echo "${negrito}${ciano}Abrindo pasta ${reset}${negrito}${magenta}$LOCAL${reset}${negrito}${ciano}...${reset}"
+# Verificar se a pasta já existe, se não exitir, cria-la
+if [ -d "$LOCAL" ]; then
+    echo "${negrito}${amarelo}A pasta ${reset}${negrito}${magenta}$ARQUIVO${reset}${negrito}${amarelo} já existe! Pulando criação...${reset}"
+else
+    echo "${negrito}${ciano}Criando pasta ${reset}${negrito}${magenta}$ARQUIVO${reset}${negrito}${ciano} em${reset} ${negrito}${magenta}/usr/local/bin${reset}${negrito}${ciano}...${reset}"
+    sudo mkdir "$LOCAL"
+    echo "${negrito}${verde}A pasta ${reset}${negrito}${magenta}$ARQUIVO${reset}${negrito}${verde} foi criada!${reset}"
+fi
+
+# Abrir a pasta
+echo "${negrito}${ciano}Abrindo a pasta ${reset}${negrito}${magenta}$LOCAL${reset}${negrito}${ciano}...${reset}"
 cd "$LOCAL"
 
 # Download do arquivo compactado (comando wget para arquivo maior que 100MB)
