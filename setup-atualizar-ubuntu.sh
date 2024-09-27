@@ -7,22 +7,7 @@ sudo -v
 printf "\e[8;40;100t"
 
 # Definir as cores para o texto
-preto=$(tput setaf 0)
-vermelho=$(tput setaf 1)
-verde=$(tput setaf 2)
-amarelo=$(tput setaf 3)
-azul=$(tput setaf 4)
-magenta=$(tput setaf 5)
-ciano=$(tput setaf 6)
-branco=$(tput setaf 7)
-cinza=$(tput setaf 8)
-roxo=$(tput setaf 129)
-laranja=$(tput setaf 166)
-bg_preto=$(tput setab 0)
-bg_branco=$(tput setab 7)
-negrito=$(tput bold)
-sublinhado=$(tput smul) 
-reset=$(tput sgr0)
+preto=$(tput setaf 0) vermelho=$(tput setaf 1) verde=$(tput setaf 2) amarelo=$(tput setaf 3) azul=$(tput setaf 4) magenta=$(tput setaf 5) ciano=$(tput setaf 6) branco=$(tput setaf 7) cinza=$(tput setaf 8) roxo=$(tput setaf 129) laranja=$(tput setaf 166) bg_preto=$(tput setab 0) bg_branco=$(tput setab 7) negrito=$(tput bold) sublinhado=$(tput smul) reset=$(tput sgr0)
 
 # Função para verificar conexão com a internet
 echo "${negrito}${ciano}Verificando conexão com a internet...${reset}"
