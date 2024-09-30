@@ -11,7 +11,9 @@ Passo 3: Execute o seguinte comando:
 Passo 4: Aguarde o processo de download e instalação autônoma.  
 Passo 5: Faça a última instrução exibida ao final da instalação.  
 
-INSTRUÇÕES FINAIS: O atalho atualizar.desktop deve aparecer na sua área de trabalho agora. Clique com o botão direito do mouse no atalho e selecione "Permitir iniciar". Agora você pode clicar duas vezes no atalho para executar o script diretamente da sua área de trabalho.
+INSTRUÇÕES FINAIS: O atalho atualizar.desktop deve aparecer na sua área de trabalho agora.  
+Ubuntu 20.04 ou superior: Clique com o botão direito do mouse no atalho e selecione "Permitir iniciar".
+Ubuntu 18.04 ou inferior: Clique com o botão direito do mouse no atalho e selecione "Propriedades", selecione a aba "Permissões" e marque a opção "Permitir execução do arquivo como um programa". Agora você pode clicar duas vezes no atalho da área de trabalho e selecionar "Confiar e iniciar".
 
 Fim!
 
