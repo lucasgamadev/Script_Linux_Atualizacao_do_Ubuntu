@@ -76,7 +76,9 @@ echo "${negrito}${verde}O arquivo .desktop foi movido para ${magenta}Área de Tr
 echo "${negrito}${verde}A instalação foi concluída com sucesso!${reset}"
 
 # Instruções finais
-echo "${negrito}${sublinhado}${laranja}INSTRUÇÕES FINAIS:${reset}" "${negrito}${branco}O atalho ${ciano}atualizar.desktop${reset}${negrito}${branco} deve aparecer na sua área de trabalho agora. Clique com o botão direito do mouse no atalho e selecione ${reset}${negrito}${verde}"Permitir iniciar"${reset}. ${negrito}${branco}Agora você pode clicar duas vezes no atalho para executar o script diretamente da sua área de trabalho.${reset}"
+echo "${negrito}${sublinhado}${roxo}INSTRUÇÕES FINAIS:${reset}" "${negrito}${branco}O atalho ${ciano}atualizar.desktop${reset}${negrito}${branco} deve aparecer na sua área de trabalho agora. 
+${laranja}Ubuntu 20.04 ou superior:${reset}${negrito}${branco} Clique com o botão direito do mouse no atalho e selecione ${reset}${negrito}${verde}"Permitir iniciar"${reset}.${negrito}
+${laranja}Ubuntu 18.04 ou inferior:${reset}${negrito}${branco} Clique com o botão direito do mouse no atalho e selecione ${reset}${negrito}${verde}"Propriedades"${reset}${negrito}${branco}, selecione a aba ${verde}"Permissões"${reset}${negrito}${branco} e marque a opção ${verde}"Permitir execução do arquivo como um programa"${reset}. ${negrito}${branco}Agora você pode clicar duas vezes no atalho da área de trabalho e selecionar ${verde}"Confiar e iniciar"${reset}."
 
 # Esperar pelo Enter para sair
 read -p "${negrito}Pressione ${verde}Enter${reset}${negrito} para sair${reset}"
